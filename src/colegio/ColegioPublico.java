@@ -1,4 +1,5 @@
 
+
 package colegio;
 
 public class ColegioPublico extends Colegio{
@@ -52,5 +53,18 @@ public class ColegioPublico extends Colegio{
     public void setSueldoDeProfesores(boolean sueldoDeProfesores) {
         this.sueldoDeProfesores = sueldoDeProfesores;
     }
+    public void acelerar(){
+        this.velocidad += 10;
+    }
     
+    public void acelerar(int nuevaVelocidad){
+        if(nuevaVelocidad<=this.velocidad){
+            System.out.println("El carro no acelerará");
+        }else{
+            this.velocidad = nuevaVelocidad;
+            System.out.println("Nueva velocidad: " + String.valueOf(nuevaVelocidad) + " Km/h");            
+        }
+        
+    }
+
 }
