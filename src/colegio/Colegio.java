@@ -63,7 +63,7 @@ public class Colegio {
             System.out.println("Mas numero de estudiantes ");
         }else{
             this.mixto = nuevomixto;
-            System.out.println("Nuevo mixto: " + String.valueOf(nuevaVelocidad) + " Educacion");            
+            System.out.println("Nuevo mixto: " + String.valueOf(nuevomixto) + " Educacion");            
         }
         
     }
